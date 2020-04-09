@@ -11,5 +11,5 @@ $ git clone
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/uXwjONw.gif)
+![](https://i.imgur.com/HaIl1k7.gif)
 > 讓名片達到連絡的目的
