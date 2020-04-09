@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="名片製作" />
+    <meta property="og:description" content="交換名片不只為了開啟對話，還讓對方能找到自己正確的社會位置，而不用尷尬地問對方的正式頭銜是什麼，進而建立良好的關係。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <title>名片製作</title>
+</head>
+<body>
+    <div class="card container">
+        <div class="card-header hide">名片製作</div>
+        <div class="card__input" align="center">
+            <div class="card__input-content" align="center">
+                <label for="name">姓名：</label>
+                <input type="text" maxlength="20" name="name" class="card__input-name" value="姓名" onfocus="if(this.value == '姓名'){this.value='';}">
+            </div>
+            <div class="card__input-content">
+                <label for="designation">描述</label>
+                <input type="text" maxlength="20" name="designation" class="card__input-designation" value="描述" onfocus="if(this.value == '描述'){this.value='';}">
+            </div>
+            <div class="card__input-content">
+                <label for="company">公司</label>
+                <input type="text" maxlength="15" name="company" class="card__input-company" value="公司" onfocus="if(this.value == '公司'){this.value='';}">
+            </div>
+            <div class="card__input-content">
+                <label for="email">電子郵件</label>
+                <input type="email" value="電子郵件" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" class="card__input-email" onfocus="if(this.value == '電子郵件'){this.value='';}">
+            </div>
+            <div class="card__input-content">
+                <label for="telephone">電話</label>
+                <input value="電話" type="number" pattern="^(\+[0-9]{1,5})?([1-9][0-9]{9})$" name="telephone" class="card__input-telephone" onfocus="if(this.value == '電話'){this.value='';}">
+            </div>
+        </div>
+        <div class="card__display">
+            <div class="previous pull-left cursor"><span class="prev-btn"><img height="25" width="25" src="images/up-arrow.svg"/></span></div>
+            <div class="display_area">
+                <div class="card__display-content" id="card_preview">
+
+                </div>
+            </div>
+            <div class="next cursor"><span class="next-btn"><img height="25" width="25" src="images/up-arrow.svg"/></span></div>
+            <div align="center" class="add-bottom-space download-parent"> <a id="download" href="#">下載名片<img src="images/download.svg" height="30" width="30"/></a></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" defer></script>
+    <script type="text/javascript" src="js/actionEvents.js" defer></script>
+    <script type="text/javascript" src="js/loadData.js" defer></script>
+    <script type="text/javascript" src="js/init.js" defer></script>
+</body>
+</html>
